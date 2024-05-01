@@ -1,0 +1,1 @@
+{"flow_id": "DataFlow", "run_number": "1713684804749879", "step_name": "generate_embeddings", "task_id": "3", "field_name": "ds-root", "type": "ds-root", "value": "/home/shashwat/Desktop/Newest Microservice/.metaflow", "tags": ["attempt_id:0"], "user_name": "shashwat", "ts_epoch": 1713684806054}

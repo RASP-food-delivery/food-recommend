@@ -1,0 +1,38 @@
+[MFLOG|0|2024-04-21T07:31:56.695012Z|runtime|6881798b-45db-425e-a20a-e69a1e8efc4a]<flow DataFlow step generate_embeddings[0] (input: {"min_count": 5, "ep...)> failed:
+[MFLOG|0|2024-04-21T07:31:56.717899Z|runtime|f97be8b1-25a8-4a11-8dc8-81de13f3b848]    Internal error
+[MFLOG|0|2024-04-21T07:31:56.726622Z|runtime|a83aec71-bfd5-419f-8d57-cd9fbe477a99]Traceback (most recent call last):
+[MFLOG|0|2024-04-21T07:31:56.727136Z|runtime|649ddae3-10f0-423b-90e8-ed2470c97a13]  File "/home/shashwat/miniconda3/envs/streamlit-environment/lib/python3.11/site-packages/metaflow/cli.py", line 1177, in main
+[MFLOG|0|2024-04-21T07:31:56.727424Z|runtime|829edadb-3b7c-4755-bcdb-16ccaf4964d0]    start(auto_envvar_prefix="METAFLOW", obj=state)
+[MFLOG|0|2024-04-21T07:31:56.727687Z|runtime|d05f0279-aa48-44ec-9c61-d97abddc58dd]  File "/home/shashwat/miniconda3/envs/streamlit-environment/lib/python3.11/site-packages/metaflow/tracing/__init__.py", line 27, in wrapper_func
+[MFLOG|0|2024-04-21T07:31:56.727955Z|runtime|155a4415-7a21-4598-9fee-ca9e7f83d3c5]    return func(args, kwargs)
+[MFLOG|0|2024-04-21T07:31:56.792546Z|runtime|734b1dac-409f-4280-991f-9083da66bbf3][KILLED BY ORCHESTRATOR]
+[MFLOG|0|2024-04-21T07:31:56.792928Z|runtime|7c3d6a05-3bdc-4575-897c-d9672505a4a5]           ^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-04-21T07:31:56.793057Z|runtime|631348a4-e7df-4d3e-93c3-e018af1bd482]  File "/home/shashwat/miniconda3/envs/streamlit-environment/lib/python3.11/site-packages/metaflow/_vendor/click/core.py", line 829, in __call__
+[MFLOG|0|2024-04-21T07:31:56.793177Z|runtime|1a5dfcb7-26ef-413a-a646-2349a5dfeb55]    return self.main(args, kwargs)
+[MFLOG|0|2024-04-21T07:31:56.793291Z|runtime|3381f716-1c3b-474b-a7ae-133b9202480e]           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-04-21T07:31:56.793402Z|runtime|ee92d679-a083-4ff0-a80f-d17fbd3396fc]  File "/home/shashwat/miniconda3/envs/streamlit-environment/lib/python3.11/site-packages/metaflow/_vendor/click/core.py", line 782, in main
+[MFLOG|0|2024-04-21T07:31:56.793515Z|runtime|2efda0d8-542b-41f6-b069-5bd252921c5c]    rv = self.invoke(ctx)
+[MFLOG|0|2024-04-21T07:31:56.793626Z|runtime|42521867-29ee-4a38-904a-b2229bc8f700]         ^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-04-21T07:31:56.793734Z|runtime|823d547b-1c7a-4830-ab58-972187cf5d31]  File "/home/shashwat/miniconda3/envs/streamlit-environment/lib/python3.11/site-packages/metaflow/_vendor/click/core.py", line 1259, in invoke
+[MFLOG|0|2024-04-21T07:31:56.793845Z|runtime|7cce64b3-464e-45f5-9d72-64b3c747f534]    return _process_result(sub_ctx.command.invoke(sub_ctx))
+[MFLOG|0|2024-04-21T07:31:56.793971Z|runtime|a726bf89-33b3-4ac0-9eac-200e2566fec6]                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-04-21T07:31:56.794087Z|runtime|cd190509-d5d0-4eed-8df4-454c377bc6c2]  File "/home/shashwat/miniconda3/envs/streamlit-environment/lib/python3.11/site-packages/metaflow/_vendor/click/core.py", line 1066, in invoke
+[MFLOG|0|2024-04-21T07:31:56.794204Z|runtime|00734dfe-7419-45ea-a77e-d5eabdd161cf]    return ctx.invoke(self.callback, ctx.params)
+[MFLOG|0|2024-04-21T07:31:56.794335Z|runtime|f0b877f3-e82d-45fb-8bb6-f595d911894a]           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-04-21T07:31:56.794452Z|runtime|686e6bfa-4b96-42de-ba9a-21e4098f9b3a]  File "/home/shashwat/miniconda3/envs/streamlit-environment/lib/python3.11/site-packages/metaflow/_vendor/click/core.py", line 610, in invoke
+[MFLOG|0|2024-04-21T07:31:56.794567Z|runtime|b4cc1139-563a-4d32-94c1-e6acca659697]    return callback(args, kwargs)
+[MFLOG|0|2024-04-21T07:31:56.794684Z|runtime|629bd88e-030d-4b96-b298-286dbf7c4d7f]           ^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-04-21T07:31:56.794798Z|runtime|147a8b79-0408-48c6-815c-1d41ef9e1b02]  File "/home/shashwat/miniconda3/envs/streamlit-environment/lib/python3.11/site-packages/metaflow/_vendor/click/decorators.py", line 21, in new_func
+[MFLOG|0|2024-04-21T07:31:56.794906Z|runtime|03cabc3b-7610-496f-8d15-0ac3e5b8c075]    return f(get_current_context(), args, kwargs)
+[MFLOG|0|2024-04-21T07:31:56.795011Z|runtime|8d1fe7b4-05a7-4c21-bfea-8dc98936ac6d]           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-04-21T07:31:56.795117Z|runtime|19bc3c8e-ebc1-490f-be8b-e0522b82e6fd]  File "/home/shashwat/miniconda3/envs/streamlit-environment/lib/python3.11/site-packages/metaflow/cli.py", line 572, in step
+[MFLOG|0|2024-04-21T07:31:56.795222Z|runtime|3f9411cd-6dc2-4308-955d-da1f86fb7f1f]    task.run_step(
+[MFLOG|0|2024-04-21T07:31:56.795330Z|runtime|e679b443-7a45-4c33-8866-682bc6cca03c]  File "/home/shashwat/miniconda3/envs/streamlit-environment/lib/python3.11/site-packages/metaflow/task.py", line 619, in run_step
+[MFLOG|0|2024-04-21T07:31:56.795423Z|runtime|266f267c-6962-44a7-b170-79ccbfc1bde7]    self._exec_step_function(step_func)
+[MFLOG|0|2024-04-21T07:31:56.795493Z|runtime|4bd9c17d-8102-4940-99b0-d92b7d77651f]  File "/home/shashwat/miniconda3/envs/streamlit-environment/lib/python3.11/site-packages/metaflow/task.py", line 70, in _exec_step_function
+[MFLOG|0|2024-04-21T07:31:56.795561Z|runtime|83f01f85-8fb3-41d4-a2b5-18ebbb6398f9]    step_function()
+[MFLOG|0|2024-04-21T07:31:56.795630Z|runtime|e9d37ea8-f8f7-4970-a20e-c31cbc72b7a0]  File "/home/shashwat/Desktop/Newest Microservice/data_flow.py", line 128, in generate_embeddings
+[MFLOG|0|2024-04-21T07:31:56.795698Z|runtime|0307e7b1-9754-45ab-8ea5-90c09559f6b7]    from gensim.models.word2vec import Word2Vec
+[MFLOG|0|2024-04-21T07:31:56.795765Z|runtime|aabb34f3-c3d5-418d-85ec-86ea19093825]ModuleNotFoundError: No module named 'gensim'
+[MFLOG|0|2024-04-21T07:31:56.795832Z|runtime|a9edbe55-c223-4164-be9a-3de81c54519c]
+[MFLOG|0|2024-04-21T07:31:56.796116Z|runtime|3c75575c-ddb8-4069-92d7-67b27bce8b08]Task failed.

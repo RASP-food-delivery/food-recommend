@@ -1,0 +1,6 @@
+[MFLOG|0|2024-04-19T13:12:46.514880Z|runtime|990e5972-a572-4eea-8412-761889d51328]Training with hypers {"min_count": 5, "epochs": 60, "vector_size": 48, "window": 10, "ns_exponent": 0.75} is completed!
+[MFLOG|0|2024-04-19T13:12:46.515087Z|runtime|dfe7b5e5-ddad-427f-a1e1-e1be00decd6d]Vector space size: 22
+[MFLOG|0|2024-04-19T13:12:46.515187Z|runtime|7c60cbd9-9d54-4661-8686-60d6d04f10f1]Example track: '65b61c5aee9cc30cf8584569|||pasta'
+[MFLOG|0|2024-04-19T13:12:46.515274Z|runtime|5706c174-2b63-41d9-9b5c-a32148c0aa04]Test vector for '65b61c5aee9cc30cf8584569|||pasta': [ 0.00356501  0.01935886 -0.01368583  0.01380771 -0.00606382]
+[MFLOG|0|2024-04-19T13:12:46.515357Z|runtime|b8d6fd57-618d-43e9-9528-402597caacc9]Similar songs to '65b61c5aee9cc30cf8584569|||pasta': [('65b233c52f7db93a6cb88e85|||Maggi', 0.7158064246177673), ('65b61c5aee9cc30cf8584569|||Dosa', 0.644838809967041), ('65b61c5aee9cc30cf8584569|||Choclate Shake', 0.6287810206413269)]
+[MFLOG|0|2024-04-19T13:12:46.518786Z|runtime|6706409d-74d9-4010-953c-b3f20173b20a]Hit Rate@50 is: 0.7

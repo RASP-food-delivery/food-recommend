@@ -1,0 +1,6 @@
+[MFLOG|0|2024-04-19T13:08:57.715534Z|runtime|868adc55-74be-49f2-9eb5-86ce12f8b312]Training with hypers {"min_count": 5, "epochs": 30, "vector_size": 48, "window": 10, "ns_exponent": 0.75} is completed!
+[MFLOG|0|2024-04-19T13:08:57.715670Z|runtime|789a917d-4795-41d4-85a5-85bf217a1e21]Vector space size: 22
+[MFLOG|0|2024-04-19T13:08:57.715765Z|runtime|eef2b940-92ae-4d2e-aa20-630099549599]Example track: '65b114ad99d14a162a884940|||Masala Maggi'
+[MFLOG|0|2024-04-19T13:08:57.715852Z|runtime|96a07057-c1fe-4e05-beea-5a9ac9a7723a]Test vector for '65b114ad99d14a162a884940|||Masala Maggi': [-0.01775927 -0.01621013  0.00698996 -0.00522434 -0.0140597 ]
+[MFLOG|0|2024-04-19T13:08:57.716083Z|runtime|fda10bab-e224-4e47-925e-da4aa16266cf]Similar songs to '65b114ad99d14a162a884940|||Masala Maggi': [('65aeba6300c3fd32d3c07241|||12151', 0.3809185326099396), ('65b114ad99d14a162a884940|||Boba Tea', 0.27249374985694885), ('65aeba6300c3fd32d3c07241|||Cheese Maggi', 0.2703968286514282)]
+[MFLOG|0|2024-04-19T13:08:57.720237Z|runtime|c4f3be70-cd67-4db0-9455-4ae86f807529]Hit Rate@50 is: 0.7

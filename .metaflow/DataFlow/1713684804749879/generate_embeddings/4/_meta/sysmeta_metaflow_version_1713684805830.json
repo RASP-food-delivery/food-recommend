@@ -1,0 +1,1 @@
+{"flow_id": "DataFlow", "run_number": "1713684804749879", "step_name": "generate_embeddings", "task_id": "4", "field_name": "metaflow_version", "type": "metaflow_version", "value": "2.11.10", "tags": ["attempt_id:0"], "user_name": "shashwat", "ts_epoch": 1713684805830}

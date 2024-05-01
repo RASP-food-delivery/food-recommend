@@ -1,0 +1,37 @@
+[MFLOG|0|2024-04-21T07:28:10.121898Z|runtime|5b65a6ea-a5b0-4b6c-926b-8c0f5a6317d9]<flow DataFlow step prepare_dataset> failed:
+[MFLOG|0|2024-04-21T07:28:10.125154Z|runtime|02741224-33d5-46ce-bb38-371241aa8eda]    Internal error
+[MFLOG|0|2024-04-21T07:28:10.126722Z|runtime|a6d6f794-eb32-42a3-b3a1-62920f19108d]Traceback (most recent call last):
+[MFLOG|0|2024-04-21T07:28:10.126838Z|runtime|69fe270c-6fe0-4a01-b7a1-354c3fde34aa]  File "/home/shashwat/miniconda3/envs/streamlit-environment/lib/python3.11/site-packages/metaflow/cli.py", line 1177, in main
+[MFLOG|0|2024-04-21T07:28:10.126927Z|runtime|b12b7c89-e671-4cb6-a48a-0e675901ae3b]    start(auto_envvar_prefix="METAFLOW", obj=state)
+[MFLOG|0|2024-04-21T07:28:10.127003Z|runtime|e3c4f9f7-68af-46e6-abef-74feae47524c]  File "/home/shashwat/miniconda3/envs/streamlit-environment/lib/python3.11/site-packages/metaflow/tracing/__init__.py", line 27, in wrapper_func
+[MFLOG|0|2024-04-21T07:28:10.127078Z|runtime|6b4b678d-0c82-4696-af83-e82911036493]    return func(args, kwargs)
+[MFLOG|0|2024-04-21T07:28:10.127147Z|runtime|8199782c-f39b-486c-9d50-e4c01ac10959]           ^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-04-21T07:28:10.127220Z|runtime|10b42fbf-484c-4ef9-a4f3-7287e38d89da]  File "/home/shashwat/miniconda3/envs/streamlit-environment/lib/python3.11/site-packages/metaflow/_vendor/click/core.py", line 829, in __call__
+[MFLOG|0|2024-04-21T07:28:10.127288Z|runtime|927f5ee1-ec46-4b58-8d34-324247f86d81]    return self.main(args, kwargs)
+[MFLOG|0|2024-04-21T07:28:10.162989Z|runtime|0256cfac-f367-4efa-99de-750b78ff1c95]           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-04-21T07:28:10.163145Z|runtime|da6262fe-07be-4acc-a1a9-17a23bf28894]  File "/home/shashwat/miniconda3/envs/streamlit-environment/lib/python3.11/site-packages/metaflow/_vendor/click/core.py", line 782, in main
+[MFLOG|0|2024-04-21T07:28:10.163223Z|runtime|1f940f18-1bd3-4648-9388-a7691ed3bb0a]    rv = self.invoke(ctx)
+[MFLOG|0|2024-04-21T07:28:10.163290Z|runtime|db46b9b8-dd85-4792-99c0-6dda79a662ae]         ^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-04-21T07:28:10.163359Z|runtime|d867a485-eaf2-4f6c-9900-8a848a90d3ab]  File "/home/shashwat/miniconda3/envs/streamlit-environment/lib/python3.11/site-packages/metaflow/_vendor/click/core.py", line 1259, in invoke
+[MFLOG|0|2024-04-21T07:28:10.163422Z|runtime|bcc7b197-d2fc-472a-8b7d-8bd938fe4fb6]    return _process_result(sub_ctx.command.invoke(sub_ctx))
+[MFLOG|0|2024-04-21T07:28:10.163486Z|runtime|e77109c1-5a1a-4e30-926d-fea8f7382033]                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-04-21T07:28:10.163549Z|runtime|97274531-e579-41a5-8584-d0b18309bb8b]  File "/home/shashwat/miniconda3/envs/streamlit-environment/lib/python3.11/site-packages/metaflow/_vendor/click/core.py", line 1066, in invoke
+[MFLOG|0|2024-04-21T07:28:10.163612Z|runtime|1e309c77-2894-4c5b-bb0b-9a2345021c29]    return ctx.invoke(self.callback, ctx.params)
+[MFLOG|0|2024-04-21T07:28:10.163677Z|runtime|5da19834-7188-4a20-b851-03c9424e5c9f]           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-04-21T07:28:10.163738Z|runtime|d1a47670-66a5-46d1-a96a-3de10f6993be]  File "/home/shashwat/miniconda3/envs/streamlit-environment/lib/python3.11/site-packages/metaflow/_vendor/click/core.py", line 610, in invoke
+[MFLOG|0|2024-04-21T07:28:10.163802Z|runtime|2986795c-7623-4485-907f-d4fb7e7564f9]    return callback(args, kwargs)
+[MFLOG|0|2024-04-21T07:28:10.163862Z|runtime|8668a6aa-0078-41f8-9e76-837c14077e39]           ^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-04-21T07:28:10.163922Z|runtime|c85128f7-660c-4bea-b533-872a2776ddfe]  File "/home/shashwat/miniconda3/envs/streamlit-environment/lib/python3.11/site-packages/metaflow/_vendor/click/decorators.py", line 21, in new_func
+[MFLOG|0|2024-04-21T07:28:10.163984Z|runtime|fa320ceb-8bb7-47fe-b7c9-55e26596986e]    return f(get_current_context(), args, kwargs)
+[MFLOG|0|2024-04-21T07:28:10.164046Z|runtime|b18161ad-f0ec-44e1-ba12-f3af95af29fb]           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2024-04-21T07:28:10.164106Z|runtime|e2a5241a-7120-4d5b-9fcb-39655d6d2c61]  File "/home/shashwat/miniconda3/envs/streamlit-environment/lib/python3.11/site-packages/metaflow/cli.py", line 572, in step
+[MFLOG|0|2024-04-21T07:28:10.164168Z|runtime|364193d9-e04e-4650-9adf-485ce6b44a93]    task.run_step(
+[MFLOG|0|2024-04-21T07:28:10.164227Z|runtime|657e6a29-3bb1-4c4f-87e9-8db446b20c23]  File "/home/shashwat/miniconda3/envs/streamlit-environment/lib/python3.11/site-packages/metaflow/task.py", line 619, in run_step
+[MFLOG|0|2024-04-21T07:28:10.164288Z|runtime|8196235f-f3f5-4ad6-acb2-0b3a91d0e274]    self._exec_step_function(step_func)
+[MFLOG|0|2024-04-21T07:28:10.164349Z|runtime|cc60be5d-f0a6-424c-a61c-8552495c10a8]  File "/home/shashwat/miniconda3/envs/streamlit-environment/lib/python3.11/site-packages/metaflow/task.py", line 70, in _exec_step_function
+[MFLOG|0|2024-04-21T07:28:10.164412Z|runtime|409d2016-94bd-4a6d-abb2-1edca362a945]    step_function()
+[MFLOG|0|2024-04-21T07:28:10.164472Z|runtime|c2741153-6893-4e18-8700-c5eaee755227]  File "/home/shashwat/Desktop/Newest Microservice/data_flow.py", line 33, in prepare_dataset
+[MFLOG|0|2024-04-21T07:28:10.164538Z|runtime|d86cd9a4-9d93-491e-8782-aefc7cc94c51]    import duckdb
+[MFLOG|0|2024-04-21T07:28:10.164600Z|runtime|80963bb3-7d97-42b8-bd70-be2ef1f61f2b]ModuleNotFoundError: No module named 'duckdb'
+[MFLOG|0|2024-04-21T07:28:10.164661Z|runtime|281ffc0e-7de5-4e98-bd68-62ba402aabcb]
+[MFLOG|0|2024-04-21T07:28:10.164917Z|runtime|5677b96e-9219-418b-8659-f8a26ad5011b]Task failed.
